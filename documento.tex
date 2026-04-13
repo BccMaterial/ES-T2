@@ -172,7 +172,7 @@ Abaixo temos a lista de requisitos funcionais, separados por seção.
 		\hline
 		Nome & Disponibilidade de quartos\\
 		\hline
-		Descrição & O sistema deve exibir a disponibilidade de quartos para data selecionadas. \\
+		Descrição & O sistema deve exibir a disponibilidade de quartos para datas selecionadas pelo cliente. \\
 		\hline
 		Extensões & \begin{itemize}[leftmargin=*, labelsep=0.5em, noitemsep, topsep=0pt]
 		\item Um calendário visual exibindo as disponibilidades
@@ -240,7 +240,7 @@ Abaixo temos a lista de requisitos funcionais, separados por seção.
 		\hline
 		Nome & Confirmação da reserva\\
 		\hline
-		Descrição & Deve ser enviado um e-mail automaticamente após a confirmação da reserva. \\
+		Descrição & Deve ser enviado um e-mail automaticamente para o cliente após a confirmação da reserva. \\
 		\hline
 		Extensões & \begin{itemize}[leftmargin=*, labelsep=0.5em, noitemsep, topsep=0pt]
 		\item Envio de lembretes antes do período de estadia
@@ -305,7 +305,7 @@ Abaixo temos a lista de requisitos funcionais, separados por seção.
 		\hline
 		Nome & Avaliação de estabelecimentos\\
 		\hline
-		Descrição & Permitir a avaliação da hospedagens pelo cliente após suas estadia. \\
+		Descrição & Permitir a avaliação de hospedagens pelo cliente após suas estadia. \\
 		\hline
 		Extensões & \begin{itemize}[leftmargin=*, labelsep=0.5em, noitemsep, topsep=0pt]
 		\item Comentários textuais e fotos
@@ -327,6 +327,38 @@ Abaixo temos a lista de requisitos funcionais, separados por seção.
 		\hline
 	\end{tabular}
 	\caption{Requisito Funcional BIBL-008}
+\end{table}
+
+\begin{table}[h]
+	\begin{tabular}{|l|p{10cm}|}
+		\hline
+		\textbf{Campo} & \textbf{Descrição} \\
+		\hline
+		Requisito ID & BIBL-009 \\
+		\hline
+		Nome & Exibição de avaliações\\
+		\hline
+		Descrição & O sistema deve exibir avaliações e nota média dos estabelecimentos para outros usuários. \\
+		\hline
+		Extensões & \begin{itemize}[leftmargin=*, labelsep=0.5em, noitemsep, topsep=0pt]
+		\item Ordenação das avaliações por relevância ou data
+		\end{itemize} \\
+		\hline
+		Critérios de Aceitação & \begin{itemize}[leftmargin=*, labelsep=0.5em, noitemsep, topsep=0pt]
+		\item Cálculo correto da média
+		\item Listagem das avaliações associadas
+		\end{itemize} \\
+		\hline
+		Dependências & \begin{itemize}[leftmargin=*, labelsep=0.5em, noitemsep, topsep=0pt] 
+		\item RF08
+		\end{itemize} \\
+		\hline
+		Fonte & Transparência do sistema\\
+		\hline
+		Prioridade & Média \\
+		\hline
+	\end{tabular}
+	\caption{Requisito Funcional BIBL-009}
 \end{table}
 
 
