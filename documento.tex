@@ -197,6 +197,40 @@ Abaixo temos a lista de requisitos funcionais, separados por seção.
 	\caption{Requisito Funcional BIBL-004}
 \end{table}
 
+\begin{table}[h]
+	\begin{tabular}{|l|p{10cm}|}
+		\hline
+		\textbf{Campo} & \textbf{Descrição} \\
+		\hline
+		Requisito ID & BIBL-005 \\
+		\hline
+		Nome & Realização de reservas\\
+		\hline
+		Descrição & O sistema deve permitir que usuários realizem reservas com pagamentos online. \\
+		\hline
+		Extensões & \begin{itemize}[leftmargin=*, labelsep=0.5em, noitemsep, topsep=0pt]
+		\item Múltiplos meios de pagamento
+		\end{itemize} \\
+		\hline
+		Critérios de Aceitação & \begin{itemize}[leftmargin=*, labelsep=0.5em, noitemsep, topsep=0pt]
+		\item A reserva deve ser registrada após o pagamento ser concluído
+		\item Não podem ocorrer reservas duplicadas para o mesmo período
+		\end{itemize} \\
+		\hline
+		Dependências & \begin{itemize}[leftmargin=*, labelsep=0.5em, noitemsep, topsep=0pt] 
+		\item RF03 
+		\item RF04
+		\item Integração com o gateway de pagamento
+		\end{itemize} \\
+		\hline
+		Fonte & Principal processo do sistema \\
+		\hline
+		Prioridade & Crítica \\
+		\hline
+	\end{tabular}
+	\caption{Requisito Funcional BIBL-005}
+\end{table}
+
 \chapter{Requisitos Não Funcionais}
 
 \end{document}
