@@ -47,17 +47,16 @@ Este documento visa listar os requisitos funcionais e não funcionais da platafo
 
 Abaixo temos a lista de requisitos funcionais, separados por seção.
 
-\section{BIBL-001 - Cadastro de estabelecimento}
+\section{BIBL-001 - Cadastro de hospedagens}
 
 \begin{table}[h]
-	\caption{Requisito Funcional BIBL-001}
 	\begin{tabular}{|l|p{10cm}|}
 		\hline
 		\textbf{Campo} & \textbf{Descrição} \\
 		\hline
 		Requisito ID & BIBL-001 \\
 		\hline
-		Nome & Cadastrar Estabelecimento \\
+		Nome & Cadastrar Estadia \\
 		\hline
 		Descrição & O sistema deve permitir que o administrador ou responsável autorizado cadastre uma estadia informando dados como nome, endereço, descrição e uma ou mais fotos. O fluxo principal consiste em acessar a funcionalidade de cadastro, preencher os campos obrigatórios, anexar imagens e confirmar o cadastro. \\
 		\hline
@@ -68,8 +67,8 @@ Abaixo temos a lista de requisitos funcionais, separados por seção.
 		\end{itemize} \\
 		\hline
 		Critérios de Aceitação & \begin{itemize}[leftmargin=*, labelsep=0.5em, noitemsep, topsep=0pt]
-		\item O sistema deve permitir salvar um estabelecimento com dados válidos
-		\item Deve ser possível anexar ao menos uma foto
+		\item O sistema deve permitir salvar um tipo de quarto com nome e preço válidos
+		\item O preço deve ser um valor numérico positivo
 		\item O sistema deve validar campos obrigatórios
 		\item As imagens devem ser armazenadas corretamente e vinculadas ao estabelecimento e à hospedagem
 		\item O usuário deve receber confirmação de sucesso após o cadastro
@@ -78,7 +77,6 @@ Abaixo temos a lista de requisitos funcionais, separados por seção.
 		\hline
 		Dependências & \begin{itemize}[leftmargin=*, labelsep=0.5em, noitemsep, topsep=0pt] 
 		\item Sistema de autenticação de usuário com controle de acesso
-		\item Sistema de armazenamento de imagens (Ex.: CDNs)
 		\item Banco de dados para armazenar os cadastros
 		\end{itemize} \\
 		\hline
@@ -87,6 +85,46 @@ Abaixo temos a lista de requisitos funcionais, separados por seção.
 		Prioridade & Alta \\
 		\hline
 	\end{tabular}
+	\caption{Requisito Funcional BIBL-001}
+\end{table}
+
+\section{BIBL-002 - Cadastro de tipos de quarto}
+
+\begin{table}[h]
+	\begin{tabular}{|l|p{10cm}|}
+		\hline
+		\textbf{Campo} & \textbf{Descrição} \\
+		\hline
+		Requisito ID & BIBL-002 \\
+		\hline
+		Nome & Cadastrar Tipos de Quartos \\
+		\hline
+		Descrição & O sistema deve permitir que o administrador ou responsável autorizado cadastre diferentes tipos de quartos, informando dados como nome do tipo (Ex.: solteiro, casal, suite, etc.), descrição e preço associado. O fluxo principal consiste em acessar a funcionalidade de cadastro, preencher as informações obrigatórias e confirmar o registro. \\
+		\hline
+		Extensões & \begin{itemize}[leftmargin=*, labelsep=0.5em, noitemsep, topsep=0pt]
+		\item Validação de campos obrigatórios não preenchidos
+		\item Validação de valores inválidos, como preço negativo ou formato inválido
+		\item Cancelamento do cadastro antes da finalização
+		\end{itemize} \\
+		\hline
+		Critérios de Aceitação & \begin{itemize}[leftmargin=*, labelsep=0.5em, noitemsep, topsep=0pt]
+		\item O sistema deve permitir salvar um tipo de quarto com informações válidas
+		\item O preço deve ser um valor numérico positivo
+		\item O tipo de quarto deve ser salvo corretamente no banco de dados
+		\item Apenas usuários autorizados devem conseguir cadastrar tipos de quarto
+		\end{itemize} \\
+		\hline
+		Dependências & \begin{itemize}[leftmargin=*, labelsep=0.5em, noitemsep, topsep=0pt] 
+		\item Sistema de autenticação de usuário com controle de acesso
+		\item Banco de dados para armazenar os cadastros
+		\end{itemize} \\
+		\hline
+		Fonte & Equipe de produtos \\
+		\hline
+		Prioridade & Alta \\
+		\hline
+	\end{tabular}
+	\caption{Requisito Funcional BIBL-002}
 \end{table}
 
 \chapter{Requisitos Não Funcionais}
