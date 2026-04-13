@@ -135,7 +135,7 @@ Abaixo temos a lista de requisitos funcionais, separados por seção.
 		\hline
 		Requisito ID & BIBL-003 \\
 		\hline
-		Busca de hospedagens \\
+		Nome & Busca de hospedagens \\
 		\hline
 		Descrição & O sistema deve permitir que usuários busquem por hospedagens através de destino e datas. \\
 		\hline
@@ -161,6 +161,40 @@ Abaixo temos a lista de requisitos funcionais, separados por seção.
 		\hline
 	\end{tabular}
 	\caption{Requisito Funcional BIBL-003}
+\end{table}
+
+\begin{table}[h]
+	\begin{tabular}{|l|p{10cm}|}
+		\hline
+		\textbf{Campo} & \textbf{Descrição} \\
+		\hline
+		Requisito ID & BIBL-004 \\
+		\hline
+		Nome & Disponibilidade de quartos\\
+		\hline
+		Descrição & O sistema deve exibir a disponibilidade de quartos para data selecionadas. \\
+		\hline
+		Extensões & \begin{itemize}[leftmargin=*, labelsep=0.5em, noitemsep, topsep=0pt]
+		\item Um calendário visual exibindo as disponibilidades
+		\end{itemize} \\
+		\hline
+		Critérios de Aceitação & \begin{itemize}[leftmargin=*, labelsep=0.5em, noitemsep, topsep=0pt]
+		\item Indicar corretamente a quantidade de quartos disponíveis e indisponíveis
+		\item Não permitir overbooking
+		\end{itemize} \\
+		\hline
+		Dependências & \begin{itemize}[leftmargin=*, labelsep=0.5em, noitemsep, topsep=0pt] 
+		\item RF02 
+		\item RF03
+		\item RF05
+		\end{itemize} \\
+		\hline
+		Fonte & Regras de negócio \\
+		\hline
+		Prioridade & Alta \\
+		\hline
+	\end{tabular}
+	\caption{Requisito Funcional BIBL-004}
 \end{table}
 
 \chapter{Requisitos Não Funcionais}
