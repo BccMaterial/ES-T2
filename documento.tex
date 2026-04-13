@@ -231,6 +231,40 @@ Abaixo temos a lista de requisitos funcionais, separados por seção.
 	\caption{Requisito Funcional BIBL-005}
 \end{table}
 
+\begin{table}[h]
+	\begin{tabular}{|l|p{10cm}|}
+		\hline
+		\textbf{Campo} & \textbf{Descrição} \\
+		\hline
+		Requisito ID & BIBL-006 \\
+		\hline
+		Nome & Confirmação da reserva\\
+		\hline
+		Descrição & Deve ser enviado um e-mail automaticamente após a confirmação da reserva. \\
+		\hline
+		Extensões & \begin{itemize}[leftmargin=*, labelsep=0.5em, noitemsep, topsep=0pt]
+		\item Envio de lembretes antes do período de estadia
+		\end{itemize} \\
+		\hline
+		Critérios de Aceitação & \begin{itemize}[leftmargin=*, labelsep=0.5em, noitemsep, topsep=0pt]
+		\item O e-email enviado deve conter dados da reserva
+		\item O e-mail deve ser enviado somente após a confirmação do pagamento
+		\end{itemize} \\
+		\hline
+		Dependências & \begin{itemize}[leftmargin=*, labelsep=0.5em, noitemsep, topsep=0pt] 
+		\item RF05
+		\item Serviçõ de e-mail
+		\end{itemize} \\
+		\hline
+		Fonte & Comunicação com o cliente \\
+		\hline
+		Prioridade & Média \\
+		\hline
+	\end{tabular}
+	\caption{Requisito Funcional BIBL-006}
+\end{table}
+
+
 \chapter{Requisitos Não Funcionais}
 
 \end{document}
